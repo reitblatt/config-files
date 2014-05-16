@@ -1,0 +1,94 @@
+CheckHostIP no
+StrictHostKeyChecking no
+
+Host dreamhost
+Hostname reitblatt.com
+user reitblatt
+
+Host herakles
+Hostname herakles.cs.cornell.edu
+user reitblatt
+ForwardAgent yes
+LocalForward 2001 grizzly.systems.cs.cornell.edu:22
+LocalForward 2002 lion.cs.cornell.edu:22
+
+Host frintel 
+Hostname frintel-1.systems.cs.cornell.edu
+user frenetic
+
+Host lion
+Hostname localhost
+Port 2002
+user reitblatt
+ForwardAgent yes
+
+Host cs
+Hostname lion.cs.cornell.edu
+user reitblatt
+ForwardAgent yes
+
+Host cslocal
+Hostname localhost
+user reitblatt
+port 2001
+ForwardAgent yes
+
+Host kodiak
+Hostname kodiak.systems.cs.cornell.edu
+user reitblatt
+ForwardX11 yes
+ForwardAgent yes
+
+Host grizzly
+Hostname grizzly.systems.cs.cornell.edu
+user reitblatt
+ForwardAgent yes
+
+Host olympic
+Hostname olympic.systems.cs.cornell.edu
+user reitblatt
+ForwardAgent yes
+
+Host polar
+Hostname polar.systems.cs.cornell.edu
+user reitblatt
+ForwardAgent yes
+
+Host spirit 
+Hostname spirit.systems.cs.cornell.edu
+user reitblatt
+ForwardAgent yes
+
+Host koala 
+Hostname koala.systems.cs.cornell.edu
+user reitblatt
+ForwardAgent yes
+
+Host vm
+Hostname localhost
+Port 2223
+user mininet
+ForwardX11 yes
+
+Host vm13
+Hostname localhost
+Port 2224
+user openflow
+ForwardX11 yes
+
+Host pathetic
+Hostname localhost
+Port 2225
+user frenetic
+ForwardX11 yes
+
+Host fattire 
+Hostname localhost
+Port 2223
+user mininet 
+ForwardX11 yes
+
+Host pandora
+Hostname mjr336.cs.cornell.edu
+user mark
+ForwardAgent yes

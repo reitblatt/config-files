@@ -1,0 +1,13 @@
+[user]
+	email = reitblatt@cs.cornell.edu
+	name = Mark Reitblatt
+[gui]
+	recentrepo = /Users/mark/Projects/Cornell/frenetic/frenetic-code
+[core]
+	excludesfile = /Users/mark/.gitignore
+[push]
+	default = simple
+[merge]
+    tool = ediff
+[mergetool "ediff"]
+    cmd = emacsclient -c -a \"\"  --eval \"(ediff-merge-files-with-ancestor \\\"$LOCAL\\\" \\\"$REMOTE\\\" \\\"$BASE\\\" nil \\\"$MERGED\\\")\"
